@@ -3,20 +3,3 @@
 @import url(https://fonts.googleapis.com/css?family=Tinos:regular,italic,700&display=swap);
 @import "fonts";
 
-/* Классы icons */
-._icon-credit-card:before {
-  content: "\e900";
-}
-._icon-marker:before {
-  content: "\e901";
-  color: #f1cdb3;
-}
-._icon-phone:before {
-  content: "\e902";
-  color: #f1cdb3;
-}
-._icon-email:before {
-  content: "\e903";
-  color: #f1cdb3;
-}
-
