@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'icons';
+  src:
+    url('fonts/icons.ttf?wcgozz') format('truetype'),
+    url('fonts/icons.woff?wcgozz') format('woff'),
+    url('fonts/icons.svg?wcgozz#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-credit-card:before {
+  content: "\e900";
+}
+._icon-marker:before {
+  content: "\e901";
+  color: #f1cdb3;
+}
+._icon-phone:before {
+  content: "\e902";
+  color: #f1cdb3;
+}
+._icon-email:before {
+  content: "\e903";
+  color: #f1cdb3;
+}
