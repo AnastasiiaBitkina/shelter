@@ -364,6 +364,7 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
+
 /* Подключаем шрифты */
 
 /* rubik-regular - latin */
@@ -429,8 +430,42 @@ html{
 *, *::before, *::after{
   box-sizing: inherit;
 }
+body {
+    font-family: "Tinos";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #000;
+}
 .wrapper{
   max-width: 1200px;
+  margin: 0 auto;
+}
+.header{
+
+    font-family: "Rubik";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    background-color: black;
+}
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__item{
+    margin-right: 35px;
+}
+.header__item:last-child{
+    margin-right: 0;
 }
 /* Переменные */
 
