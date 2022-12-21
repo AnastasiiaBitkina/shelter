@@ -442,20 +442,22 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-.header{
 
-    font-family: "Rubik";
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: normal;
+/* header styles start*/
+
+.header{
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .header__wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
+    padding-top: 60px;
 }
 .header__list {
     display: flex;
@@ -463,12 +465,55 @@ body {
 }
 .header__item{
     margin-right: 35px;
+    
+
 }
 .header__item:last-child{
     margin-right: 0;
 }
-/* Переменные */
-
-:root {
-  --maxWidthContainer: 1200px;
+.header__link a:link{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #FAFAFA;
+    text-decoration: none;
 }
+.header__link a:hover, a:focus, a:active{
+    opacity: .75;
+}
+.header__link a:visited{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #FAFAFA;
+    text-decoration: none;
+}
+.header__notlink {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #FAFAFA;;
+    text-decoration: none;
+}
+
+/* header styles end*/
+
+/* main styles start*/
+
+/* intro styles start*/
+
+.intro{
+    height: 100%;
+    background: url(../../assets/images/start-screen-background.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* intro styles end*/
+
+/* main styles end*/
