@@ -446,7 +446,6 @@ body {
 /* header styles start*/
 
 .header{
-    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -515,6 +514,30 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: brown;
+    padding-top: 343px;
+}
+.intro_heading{
+    max-width: 310px;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 42px;
+}
+.intro_subheading{
+    max-width: 430px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #CDCDCD;
+    margin-bottom: 42px;
+}
+.start_screen_puppy{
+    float: right;
 }
 
 /* intro styles end*/
