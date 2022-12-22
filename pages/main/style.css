@@ -449,12 +449,12 @@ body {
 /* header styles start*/
 
 .header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
-.header__wrapper {
+.header__wrapper{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -515,9 +515,8 @@ body {
     height: 908px;
     background-image: url("../../assets/images/start-screen-background.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-color: brown;
-    padding-top: 343px;
 }
 .intro_heading{
     max-width: 310px;
@@ -528,6 +527,7 @@ body {
     line-height: 130%;
     color: #FFFFFF;
     margin-bottom: 42px;
+    padding-top: 343px;
 }
 .intro_subheading{
     max-width: 430px;
@@ -553,10 +553,24 @@ body {
     padding-left: 45px;
     padding-right: 45px;
 }
+.intro_left_block{
+    position: absolute;
+    margin-right: 72px;
+}
 .start_screen_puppy{
     float: right;
+    padding-top: 180px;
 }
+
 
 /* intro styles end*/
 
+/*about the shelter styles* start*/
+
+.about_the_shelter{
+    height: 100%;
+}
+/*about the shelter styrles end*/
+
 /* main styles end*/
+
