@@ -568,7 +568,47 @@ body {
 /*about the shelter styles* start*/
 
 .about_the_shelter{
-    height: 100%;
+    width: 100%;
+    height: 588px;
+    background: #FFFFFF;
+}
+.about_the_shelter__pic{
+    padding-top: 80px;
+    padding-left: 175px;
+    margin-right: 120px;
+}
+.about_the_shelter__item{
+    display: flex;
+}
+.about_the_shelter__heading{
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    color: #545454;
+    max-width: 300px;
+    padding-top: 94px;
+    margin-bottom: 25px;
+}
+.about_the_shelter__subheading{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #4C4C4C;
+    max-width: 400px;
+    margin-bottom: 25px;
+}
+.about_the_shelter__subheading_2{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #4C4C4C;
+    max-width: 400px;
 }
 /*about the shelter styrles end*/
 
