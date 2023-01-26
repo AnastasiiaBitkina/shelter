@@ -467,8 +467,6 @@ body {
 }
 .header__item{
     margin-right: 35px;
-    
-
 }
 .header__item:last-child{
     margin-right: 0;
