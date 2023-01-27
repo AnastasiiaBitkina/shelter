@@ -717,6 +717,16 @@ body {
     background-repeat: repeat-y;
     background-color: brown;
 }
+.footer_left_block_text{
+    font-family: "Rubik";
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    font-size: 35px;
+    padding-top: 56px;
+    margin-bottom: 40px;
+}
 /*footer styles end*/
 /* main styles end*/
 
