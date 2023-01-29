@@ -85,6 +85,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    background: #FFFFFF;
 }
 .header__wrapper{
     display: flex;
@@ -135,3 +136,115 @@ body {
 }
 
 /* header styles end*/
+/* pets styles start*/
+.pets{
+    height: 1342px;
+    width: 100%;
+    background: #F6F6F6;
+}
+/* pets styles end*/
+/*footer styles start*/
+.footer{
+    width: 100%;
+    height: 350px;
+    background-image: url("../../assets/images/start-screen-background.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: brown;
+}
+.footer_flex{
+    display: flex;
+}
+.footer_left_block{
+    margin-right: 161px;
+}
+.footer_left_block_text{
+    font-family: "Rubik";
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    font-size: 35px;
+    line-height: 45.5px;
+    padding-top: 56px;
+    margin-bottom: 40px;
+}
+.footer_email_pic{
+    height: 26px;
+    width: 40px;
+    margin-right: 20px;
+}
+.footer_email_items{
+    display: flex;
+    margin-bottom: 40px;
+}
+.footer_email{
+    font-family: "Rubik";
+    color: #F1CDB3;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23 px;
+}
+.footer_phone_items{
+    display: flex;
+}
+.footer_phone_pic{
+    height: 32px;
+    width: 40px;
+    margin-right: 20px;
+}
+.footer_phone{
+    font-family: "Rubik";
+    color: #F1CDB3;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+.footer_center_block_text{
+    font-family: "Rubik";
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    font-size: 35px;
+    line-height: 45.5px;
+    padding-top: 56px;
+    margin-bottom: 40px;
+}
+.footer_location_Boston_items{
+    display: flex;
+}
+.footer_location_Boston_pic{
+    height: 32px;
+    width: 22px;
+    margin-right: 20px;
+}
+.footer_location_Boston{
+    font-family: "Rubik";
+    color: #F1CDB3;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+.footer_location_London_items{
+    display: flex;
+}
+.footer_location_London_pic{
+    height: 32px;
+    width: 22px;
+    margin-right: 20px;
+}
+.footer_location_London{
+    font-family: "Rubik";
+    color: #F1CDB3;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+.footer_right_block_pic{
+    height: 310px;
+    width: 300px;
+    position: relative;
+    
+}
+/*footer styles end*/
