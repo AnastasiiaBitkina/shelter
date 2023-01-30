@@ -624,11 +624,75 @@ body {
     background: #F6F6F6;
 }
 .popup_cards{
-    display: none;
+    display: absolute;
+}
+.popup_heading{
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+.popup_subheading{
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-bottom: 40px;
+}
+.popup_text{
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-bottom: 40px;
+}
+.popup_list{
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    list-style-image: url(../../assets/icons/dot.svg);
+}
+.bold_text{
+    font-weight: 700;
+}
+.popup_close_button{
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+}
+.popup_close_button_pic{
+    left: 38.46%;
+    right: 38.46%;
+    top: 38.46%;
+    bottom: 38.46%;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 .popup_Jennifer{
+    width: 952px;
+    height: 552px;
+    display: flex;
+}
+.popup_Jennifer_card{
     width: 900px;
     height: 500px;
+    position: relative;
     left: 0px;
     top: 52px;
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
