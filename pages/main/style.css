@@ -624,7 +624,22 @@ body {
     background: #F6F6F6;
 }
 .popup_cards{
-    display: absolute;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    padding: 30px 10px;  
+    opacity: 0;
+    visibility: hidden; 
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+.popup_cards.open{
+    opacity: 1;
+    visibility: visible;
 }
 .popup_heading{
     font-family: "Rubik";
@@ -673,6 +688,8 @@ body {
 .popup_close_button{
     border: 2px solid #F1CDB3;
     border-radius: 100px;
+    position: absolute;
+    margin-left: 890px;
 }
 .popup_close_button_pic{
     left: 38.46%;
@@ -1006,6 +1023,7 @@ body {
 }
 .footer_location_Boston_items{
     display: flex;
+    margin-bottom: 20px;
 }
 .footer_location_Boston_pic{
     height: 32px;
@@ -1037,7 +1055,9 @@ body {
 .footer_right_block_pic{
     height: 310px;
     width: 300px;
-    position: relative;
+    left: calc(50% - 300px/2 + 450px);
+    top: 3486px;
+    position: absolute;
     
 }
 /*footer styles end*/
