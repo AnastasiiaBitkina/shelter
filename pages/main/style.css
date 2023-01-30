@@ -623,6 +623,25 @@ body {
     height: 877px;
     background: #F6F6F6;
 }
+.popup_cards{
+    display: none;
+}
+.popup_Jennifer{
+    width: 900px;
+    height: 500px;
+    left: 0px;
+    top: 52px;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background: #FAFAFA;
+    border-radius: 9px;
+}
+.popup_Jennifer_items{
+    display: flex;
+}
+.popup_Jennifer_pic{
+    height: 500px;
+    width: 500pxß;
+}
 .pets__heading{
     font-family: 'Tinos';
     font-style: normal;
@@ -639,6 +658,30 @@ body {
 }
 .pets__slider_item{
     display: flex;
+}
+.pets_slider_button_pic{
+    width: 14px;
+    height: 6px;
+}
+.pets_slider_button_left{
+    border: 2px solid #F1CDB3;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 100px;
+    transform: rotate(-180deg);
+    width: 52px;
+    height: 52px;
+    left: 0px;
+    top: 192px;
+}
+.pets_slider_button_right{
+    border: 2px solid #F1CDB3;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 100px;
+    transform: rotate(-180deg);
+    width: 52px;
+    height: 52px;
+    left: 1200px;
+    top: 244px;
 }
 .pets__slider_item_1{
     background-color: #FAFAFA;
