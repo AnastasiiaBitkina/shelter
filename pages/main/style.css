@@ -815,7 +815,7 @@ body {
     padding-right: 45px;
     margin-top: 60px;
     position: relative;
-    left: 50%;
+    left: 510px;
 }
 /*pets styles end*/
 /*help styles start*/
@@ -852,6 +852,7 @@ body {
     align-items: center;
     text-align: center;
     color: #545454;
+    white-space: nowrap;
 }
 .help_string_1{
     display: flex;
@@ -912,6 +913,7 @@ body {
     color: #545454;
     padding-top: 80px;
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 .donation_subheading{
     font-family: "Rubik";
@@ -921,6 +923,7 @@ body {
     line-height: 110%;
     color:#545454;
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 .donation_card_items{
     display: flex;
@@ -932,6 +935,7 @@ body {
     padding-bottom: 10px;
     padding-right: 15px;
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 .donation_card_pic{
     height: 23px;
@@ -953,6 +957,7 @@ body {
     font-size: 12px;
     line-height: 18px;
     color: #B2B2B2;
+    white-space: nowrap;
 }
 /*donation styles end*/
 /*footer styles start*/
@@ -969,6 +974,7 @@ body {
 }
 .footer_left_block{
     margin-right: 161px;
+    white-space: nowrap;
 }
 .footer_left_block_text{
     font-family: "Rubik";
@@ -1022,10 +1028,12 @@ body {
     line-height: 45.5px;
     padding-top: 56px;
     margin-bottom: 40px;
+    white-space: nowrap;
 }
 .footer_location_Boston_items{
     display: flex;
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 .footer_location_Boston_pic{
     height: 32px;
