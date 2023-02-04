@@ -85,7 +85,6 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: #FFFFFF;
 }
 .header__wrapper{
     display: flex;
@@ -94,7 +93,7 @@ body {
     justify-content: space-between;
     padding-top: 60px;
 }
-.header__list {
+.header__list{
     display: flex;
     flex-wrap: wrap;
 }
@@ -104,7 +103,7 @@ body {
 .header__item:last-child{
     margin-right: 0;
 }
-.header__link a:link{
+.header__link{
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -112,9 +111,23 @@ body {
     line-height: 160%;
     color: #545454;
     text-decoration: none;
+    margin-bottom: 17px;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-color: #F1CDB3;
+    text-decoration-thickness: 3px;
 }
 .header__link a:hover, a:focus, a:active{
-    opacity: .75;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #545454;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-color: #F1CDB3;
+    text-decoration-thickness: 3px;
 }
 .header__link a:visited{
     font-family: 'Rubik';
@@ -125,7 +138,7 @@ body {
     color: #545454;
     text-decoration: none;
 }
-.header__notlink {
+.header__notlink{
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -134,6 +147,7 @@ body {
     color: #545454;
     text-decoration: none;
 }
+
 
 /* header styles end*/
 /* pets styles start*/
@@ -157,6 +171,7 @@ body {
 }
 .footer_left_block{
     margin-right: 161px;
+    white-space: nowrap;
 }
 .footer_left_block_text{
     font-family: "Rubik";
@@ -210,9 +225,12 @@ body {
     line-height: 45.5px;
     padding-top: 56px;
     margin-bottom: 40px;
+    white-space: nowrap;
 }
 .footer_location_Boston_items{
     display: flex;
+    margin-bottom: 20px;
+    white-space: nowrap;
 }
 .footer_location_Boston_pic{
     height: 32px;
@@ -244,7 +262,8 @@ body {
 .footer_right_block_pic{
     height: 310px;
     width: 300px;
-    position: relative;
-    
+    left: calc(50% - 300px/2 + 450px);
+    top: 3486px;
+    position: absolute;
 }
 /*footer styles end*/
