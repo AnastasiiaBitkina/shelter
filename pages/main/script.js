@@ -1,32 +1,19 @@
-/*slider*/
+/* popup_1 */
+let popupBg = document.querySelector('.popup__bg');
+let popup = document.querySelector('.popup');
+let openPopupButton = document.querySelectorAll('.open-popup');
 
-let petSlider = document.getElementById("viewport").offsetWidth;
-let btnNext = document.getElementById("next");
-let btnPrev = document.getElementById("prev");
-let slider = document.querySelector("div.slider");
-let viewSliders = document.querySelectorAll(".viewSlide");
-let viewSlide = 0;
-
-viewSliders[0].style.backgroundColor = "green";
-
-btnNext.addEventListener("click", function () {
-    viewSliders[viewSlide].style.backgroundColor = "red";
-    if (viewSlide < 2) {
-        viewSlide++
-    } else {
-        viewSlide = 0;
-    }
-    viewSliders[viewSlide].style.backgroundColor = "green";
-    slider.style.left = -viewSlide * viewport + "px";
+openPopupButton.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        popupBg.classList.add('active');
+        popup.classList.add('active');
+    })
 });
 
-btnPrev.addEventListener("click", function () {
-    viewSliders[viewSlide].style.backgroundColor = "red";
-    if (viewSlide > 0) {
-        viewSlide--;
-    } else {
-        viewSlide = 2;
+document.addEventListener('click', (e) =>{
+    if(e.target === popupBg) {
+        popupBg.classList.remove('active');
+        popup.classList.remove('active');
     }
-    viewSliders[viewSlide].style.backgroundColor = "green";
-    slider.style.left = -viewSlide * viewport + "px";
-})
+});
