@@ -1138,10 +1138,11 @@ body {
 }
 .popup_close_button{
     border: 2px solid #F1CDB3;
-    border-radius: 100px;
+    border-radius: 50%;
     position: absolute;
     margin-left: 890px;
     bottom: 500px;
+    background: rgba(0, 0, 0, 0);
 }
 .popup_close_button_pic{
     left: 38.46%;
@@ -1149,9 +1150,9 @@ body {
     top: 38.46%;
     bottom: 38.46%;
     padding-top: 20px;
-    padding-right: 20px;
+    padding-right: 16px;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 16px;
 }
 /*popup styles end*/
 /* open popup styles start*/
