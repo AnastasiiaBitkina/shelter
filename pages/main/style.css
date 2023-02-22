@@ -441,6 +441,9 @@ body {
     font-weight: normal;
     color: #000;
 }
+a {
+    text-decoration: none;
+}
 .wrapper{
   max-width: 1200px;
   margin: 0 auto;
@@ -749,8 +752,15 @@ body {
     letter-spacing: 0.06em;
     color: #545454;
 }
-
-
+.open-popup:visited{
+    text-decoration: none;
+}
+.open-popup_2:visited{
+    text-decoration: none;
+}
+.open-popup_3:visited{
+    text-decoration: none;
+}
 /*right button*/
 
 .pets_slider_right_button_item{
