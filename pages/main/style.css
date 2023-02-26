@@ -1186,7 +1186,7 @@ a {
 .popup {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%) scale(0);
     width: 400px;
     padding: 25px;
@@ -1216,7 +1216,7 @@ a {
 .popup_2 {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%) scale(0);
     width: 400px;
     padding: 25px;
@@ -1246,7 +1246,7 @@ a {
 .popup_3 {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%) scale(0);
     width: 400px;
     padding: 25px;
