@@ -1,0 +1,189 @@
+/*Media header end*/
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+    /*header*/
+    /*.header__wrapper{
+        padding-top: 30px;
+    }*/
+    /*centar*/
+    .wrapper{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .centar{
+        width: 100%;
+        height: 1733px;
+        background-color: #F6F6F6;
+    }
+    .centar_strings{
+        display: none;
+    }
+    .block{
+        display: none;
+    }
+    .block_tablet{
+        display: block;
+    }
+    .strings_tablet{
+        display: block;
+    }
+    .strings_tablet_2{
+        display: none;
+    }
+    .strings_tablet_3{
+        display: none;
+    }
+    .strings_tablet_4{
+        display: none;
+    }
+    .strings_tablet_5{
+        display: none;
+    }
+    .strings_tablet_6{
+        display: none;
+    }
+    .centar_strings_tablet_1{
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    .centar_strings_tablet_2{
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    .centar_strings_tablet_3{
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+    .centar_strings_tablet_4{
+        display: none
+    }
+    .pets_slider_items{
+        width: 270px;
+        height: 435px;
+    }
+    .centar__navigation_button{
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+    /*popups*/
+    .popup_card{
+        width: 630px;
+        height: 350px;
+    }
+    .popup_text_items{
+        margin-left: 0;
+      }
+    .popup_pic{
+        height: 350px;
+        width: 350px;
+    }
+    .popup_heading{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #000000;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 11px;
+    }
+    .popup_subheading{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #000000;
+        margin-bottom: 20px;
+        margin-left: 11px;
+    }
+    .popup_text{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        color: #000000;
+        margin-bottom: 20px;
+        width: 260px;
+        height: 98px;
+        margin-left: 11px;
+
+    }
+    .popup_list{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        color: #000000;
+        list-style-image: url(../../assets/icons/dot.svg);
+        margin-bottom: 6px;
+        margin-left: 22px;
+    }
+    .popup_list:last-child{
+        margin-bottom: 0;
+    }
+    .popup_cards{
+        width: 682px;
+        height: 402px;
+        display: block;
+    }
+    .popup_close_button_items{
+        position: relative;
+        width: 52px;
+        height: 52px;
+        right: 270px;
+        top: 100px;
+    }
+    /*footer*/
+    .footer{
+        position: absolute;
+        top: 1853px;
+        height: 639px;
+        width: 100%;
+    }
+    .footer_flex{
+        display: block;
+    }
+    .footer_left_block{
+        width: 278px;
+        height: 234px;
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+    .footer_central_block{
+        width: 302px;
+        height: 234px;
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+    .footer_left_plus_centar{
+        justify-content: center;
+    }
+    .footer_right_block_pic{
+        height: 310px;
+        width: 300px;
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 65px;
+    }
+    .footer_center_block_text{
+        padding-top: 0;
+    
+    }
+    .footer_left_block_text{
+        padding-top: 0;
+    }  
+}

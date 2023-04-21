@@ -189,6 +189,7 @@ closePopupButton8.addEventListener('click', () => {
     popupBg8.classList.remove('active');
     popup8.classList.remove('active');
 });
+
 /*burger*/
 
 const menu = document.querySelector('.header__nav');
@@ -197,9 +198,55 @@ const burger = document.querySelector('.header__burger');
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
 });
+burger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
 
-/*pagination*/
-/*const blocksPerPage = 1;
+
+/*paginator*/
+
+/*const blocksPerPage = 3;
+const blocks = document.querySelectorAll('#blocks > div');
+const pages = Math.ceil(blocks.length / blocksPerPage);
+let currentPage = 1;
+
+function showBlocks(page) {
+  const startIndex = (page - 1) * blocksPerPage;
+  const endIndex = startIndex + blocksPerPage;
+  blocks.forEach((block, index) => {
+    if (index >= startIndex && index < endIndex) {
+      block.style.display = 'block';
+    } else {
+      block.style.display = 'none';
+    }
+  });
+}
+
+function updatePagination() {
+  const pagesEl = document.getElementById('pages');
+  pagesEl.innerText = `${currentPage} / ${pages}`;
+}
+
+document.getElementById('prev').addEventListener('click', () => {
+  if (currentPage > 1) {
+    currentPage--;
+    showBlocks(currentPage);
+    updatePagination();
+  }
+});
+
+document.getElementById('next').addEventListener('click', () => {
+  if (currentPage < pages) {
+    currentPage++;
+    showBlocks(currentPage);
+    updatePagination();
+  }
+});
+
+showBlocks(currentPage);
+updatePagination();*/
+
+/*const blocksPerPage = 3;
 const blocks = document.querySelectorAll('#blocks > div');
 const pages = Math.ceil(blocks.length / blocksPerPage);
 let currentPage = 1;
@@ -222,38 +269,21 @@ function updatePagination() {
   pagesEl.innerText = `${currentPage} / ${pages}`;
 }
 
-function goToFirstPage() {
-  currentPage = 1;
-  showBlocks(currentPage);
-  updatePagination();
-}
-
-function goToPrevPage() {
+document.getElementById('prev').addEventListener('click', () => {
   if (currentPage > 1) {
     currentPage--;
     showBlocks(currentPage);
     updatePagination();
   }
-}
+});
 
-function goToNextPage() {
+document.getElementById('next').addEventListener('click', () => {
   if (currentPage < pages) {
     currentPage++;
     showBlocks(currentPage);
     updatePagination();
   }
-}
-
-function goToLastPage() {
-  currentPage = pages;
-  showBlocks(currentPage);
-  updatePagination();
-}
-
-document.getElementById('first').addEventListener('click', goToFirstPage);
-document.getElementById('prev').addEventListener('click', goToPrevPage);
-document.getElementById('next').addEventListener('click', goToNextPage);
-document.getElementById('last').addEventListener('click', goToLastPage);
+});
 
 showBlocks(currentPage);
 updatePagination();
@@ -262,10 +292,14 @@ function shuffle(array) {
   let currentIndex = array.length;
   let temporaryValue, randomIndex;
 
+  // While there remain elements to shuffle...
   while (currentIndex !== 0) {
+
+    // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
 
+    // And swap it with the current element.
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
@@ -273,97 +307,68 @@ function shuffle(array) {
 
   return array;
 }*/
-/*const blocksPerPage = 1;
-const blocks = document.querySelectorAll('#blocks > div');
-const pages = Math.ceil(blocks.length / blocksPerPage);
-let currentPage = 1;
-
-function showBlocks(page) {
-  const startIndex = (page - 1) * blocksPerPage;
-  const endIndex = startIndex + blocksPerPage;
-  const pageBlocks = Array.from(blocks).slice(startIndex, endIndex);
-  const shuffledBlocks = shuffle(pageBlocks);
-  blocks.forEach((block) => {
-    if (pageBlocks.includes(block)) {
-      const index = pageBlocks.indexOf(block);
-      const blockChildren = Array.from(block.children);
-      const shuffledChildren = shuffle(blockChildren);
-      block.innerHTML = '';
-      shuffledChildren.forEach((child) => {
-        block.appendChild(child);
-      });
-      block.style.display = 'block';
-    } else {
-      block.style.display = 'none';
-    }
-  });
-}
-
-function updatePagination() {
-  const pagesEl = document.getElementById('pages');
-  pagesEl.innerText = `${currentPage} / ${pages}`;
-}
-
-function goToFirstPage() {
-  currentPage = 1;
-  showBlocks(currentPage);
-  updatePagination();
-}
-
-function goToPrevPage() {
-  if (currentPage > 1) {
-    currentPage--;
-    showBlocks(currentPage);
-    updatePagination();
-  }
-}
-
-function goToNextPage() {
-  if (currentPage < pages) {
-    currentPage++;
-    showBlocks(currentPage);
-    updatePagination();
-  }
-}
-
-function goToLastPage() {
-  currentPage = pages;
-  showBlocks(currentPage);
-  updatePagination();
-}
-
-document.getElementById('first').addEventListener('click', goToFirstPage);
-document.getElementById('prev').addEventListener('click', goToPrevPage);
-document.getElementById('next').addEventListener('click', goToNextPage);
-document.getElementById('last').addEventListener('click', goToLastPage);
-
-showBlocks(currentPage);
-updatePagination();
-
-function shuffle(array) {
-  let currentIndex = array.length;
-  let temporaryValue, randomIndex;
-
-  while (currentIndex !== 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-
-    if (array[currentIndex].children.length > 0) {
-      shuffle(Array.from(array[currentIndex].children));
-    }
-  }
-
-  return array;
-}*/
-
 /*adaptive*/
+
 window.addEventListener('resize', function() {
     if (window.innerWidth < 768) {
-        /*const blocksPerPage = 1;
+        const blocksPerPage = 1;
+        const blocks = document.querySelectorAll('#blocks_mobile > div'); 
+        const pages = Math.ceil(blocks.length / blocksPerPage);
+        let currentPage = 1;
+        
+        function showBlocks(page) {
+          const startIndex = (page - 1) * blocksPerPage;
+          const endIndex = startIndex + blocksPerPage;
+          const shuffledBlocks = shuffle(Array.from(blocks)).slice(startIndex, endIndex);
+          blocks.forEach((block) => {
+            if (shuffledBlocks.includes(block)) {
+              block.style.display = 'block'; 
+            } else {
+              block.style.display = 'none'; 
+            }
+          });
+        }
+        
+        function updatePagination() {
+          const pagesEl = document.getElementById('pages_mobile');
+          pagesEl.innerText = `${currentPage} / ${pages}`;
+        }
+        
+        document.getElementById('prev_mobile').addEventListener('click', () => {
+          if (currentPage > 1) {
+            currentPage--;
+            showBlocks(currentPage);
+            updatePagination();
+          }
+        });
+        
+        document.getElementById('next_mobile').addEventListener('click', () => {
+          if (currentPage < pages) {
+            currentPage++;
+            showBlocks(currentPage);
+            updatePagination();
+          }
+        });
+        
+        showBlocks(currentPage);
+        updatePagination();
+        
+        function shuffle(array) {
+          let currentIndex = array.length;
+          let temporaryValue, randomIndex;
+        
+          while (currentIndex !== 0) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+          }
+        
+          return array;
+        }
+    } else if (window.innerWidth < 1280) {
+        const blocksPerPage = 2;
         const blocks = document.querySelectorAll('#blocks > div');
         const pages = Math.ceil(blocks.length / blocksPerPage);
         let currentPage = 1;
@@ -371,61 +376,35 @@ window.addEventListener('resize', function() {
         function showBlocks(page) {
           const startIndex = (page - 1) * blocksPerPage;
           const endIndex = startIndex + blocksPerPage;
-          const pageBlocks = Array.from(blocks).slice(startIndex, endIndex);
-          const shuffledBlocks = shuffle(pageBlocks);
+          const shuffledBlocks = shuffle(Array.from(blocks)).slice(startIndex, endIndex);
           blocks.forEach((block) => {
-            if (pageBlocks.includes(block)) {
-              const index = pageBlocks.indexOf(block);
-              const blockChildren = Array.from(block.children);
-              const shuffledChildren = shuffle(blockChildren);
-              block.innerHTML = '';
-              shuffledChildren.forEach((child) => {
-                block.appendChild(child);
-              });
+            if (shuffledBlocks.includes(block)) {
               block.style.display = 'block';
             } else {
               block.style.display = 'none';
             }
           });
         }
-        
         function updatePagination() {
           const pagesEl = document.getElementById('pages');
           pagesEl.innerText = `${currentPage} / ${pages}`;
         }
         
-        function goToFirstPage() {
-          currentPage = 1;
-          showBlocks(currentPage);
-          updatePagination();
-        }
-        
-        function goToPrevPage() {
+        document.getElementById('prev').addEventListener('click', () => {
           if (currentPage > 1) {
             currentPage--;
             showBlocks(currentPage);
             updatePagination();
           }
-        }
+        });
         
-        function goToNextPage() {
+        document.getElementById('next').addEventListener('click', () => {
           if (currentPage < pages) {
             currentPage++;
             showBlocks(currentPage);
             updatePagination();
           }
-        }
-        
-        function goToLastPage() {
-          currentPage = pages;
-          showBlocks(currentPage);
-          updatePagination();
-        }
-        
-        document.getElementById('first').addEventListener('click', goToFirstPage);
-        document.getElementById('prev').addEventListener('click', goToPrevPage);
-        document.getElementById('next').addEventListener('click', goToNextPage);
-        document.getElementById('last').addEventListener('click', goToLastPage);
+        });
         
         showBlocks(currentPage);
         updatePagination();
@@ -434,95 +413,14 @@ window.addEventListener('resize', function() {
           let currentIndex = array.length;
           let temporaryValue, randomIndex;
         
+          
           while (currentIndex !== 0) {
+        
+           
             randomIndex = Math.floor(Math.random() * currentIndex);
             currentIndex--;
         
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
-        
-            if (array[currentIndex].children.length > 0) {
-              shuffle(Array.from(array[currentIndex].children));
-            }
-          }
-        
-          return array;
-        }*/
-    } else if (window.innerWidth < 1280) {
-        const blocksPerPage = 1;
-        const blocks = document.querySelectorAll('#blocks_tablet > div');
-        const pages = Math.ceil(blocks.length / blocksPerPage);
-        let currentPage = 1;
-        
-        function showBlocks(page) {
-          const startIndex = (page - 1) * blocksPerPage;
-          const endIndex = startIndex + blocksPerPage;
-          const pageBlocks = Array.from(blocks).slice(startIndex, endIndex);
-          const shuffledBlocks = shuffle(pageBlocks);
-          blocks.forEach((block) => {
-            if (pageBlocks.includes(block)) {
-              block.style.display = 'block';
-            } else {
-              block.style.display = 'none';
-            }
-          });
-          const container = document.getElementById('blocks_tablet');
-          container.innerHTML = '';
-          shuffledBlocks.forEach((block) => {
-            container.appendChild(block);
-          });
-        }
-        
-        function updatePagination() {
-          const pagesEl = document.getElementById('pages');
-          pagesEl.innerText = `${currentPage} / ${pages}`;
-        }
-        
-        function goToFirstPage() {
-          currentPage = 1;
-          showBlocks(currentPage);
-          updatePagination();
-        }
-        
-        function goToPrevPage() {
-          if (currentPage > 1) {
-            currentPage--;
-            showBlocks(currentPage);
-            updatePagination();
-          }
-        }
-        
-        function goToNextPage() {
-          if (currentPage < pages) {
-            currentPage++;
-            showBlocks(currentPage);
-            updatePagination();
-          }
-        }
-        
-        function goToLastPage() {
-          currentPage = pages;
-          showBlocks(currentPage);
-          updatePagination();
-        }
-        
-        document.getElementById('first').addEventListener('click', goToFirstPage);
-        document.getElementById('prev').addEventListener('click', goToPrevPage);
-        document.getElementById('next').addEventListener('click', goToNextPage);
-        document.getElementById('last').addEventListener('click', goToLastPage);
-        
-        showBlocks(currentPage);
-        updatePagination();
-        
-        function shuffle(array) {
-          let currentIndex = array.length;
-          let temporaryValue, randomIndex;
-        
-          while (currentIndex !== 0) {
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex--;
-        
+            
             temporaryValue = array[currentIndex];
             array[currentIndex] = array[randomIndex];
             array[randomIndex] = temporaryValue;
@@ -531,91 +429,65 @@ window.addEventListener('resize', function() {
           return array;
         }
     } else {
-        const blocksPerPage = 1;
-        const blocks = document.querySelectorAll('#blocks > div');
-        const pages = Math.ceil(blocks.length / blocksPerPage);
-        let currentPage = 1;
-        
-        function showBlocks(page) {
-          const startIndex = (page - 1) * blocksPerPage;
-          const endIndex = startIndex + blocksPerPage;
-          const pageBlocks = Array.from(blocks).slice(startIndex, endIndex);
-          const shuffledBlocks = shuffle(pageBlocks);
-          blocks.forEach((block) => {
-            if (pageBlocks.includes(block)) {
-              const index = pageBlocks.indexOf(block);
-              const blockChildren = Array.from(block.children);
-              const shuffledChildren = shuffle(blockChildren);
-              block.innerHTML = '';
-              shuffledChildren.forEach((child) => {
-                block.appendChild(child);
-              });
-              block.style.display = 'block';
-            } else {
-              block.style.display = 'none';
-            }
-          });
-        }
-        
-        function updatePagination() {
-          const pagesEl = document.getElementById('pages');
-          pagesEl.innerText = `${currentPage} / ${pages}`;
-        }
-        
-        function goToFirstPage() {
-          currentPage = 1;
+      const blocksPerPage = 3;
+      const blocks = document.querySelectorAll('#blocks > div');
+      const pages = Math.ceil(blocks.length / blocksPerPage);
+      let currentPage = 1;
+      
+      function showBlocks(page) {
+        const startIndex = (page - 1) * blocksPerPage;
+        const endIndex = startIndex + blocksPerPage;
+        const shuffledBlocks = shuffle(Array.from(blocks)).slice(startIndex, endIndex);
+        blocks.forEach((block) => {
+          if (shuffledBlocks.includes(block)) {
+            block.style.display = 'block';
+          } else {
+            block.style.display = 'none';
+          }
+        });
+      }
+      
+      function updatePagination() {
+        const pagesEl = document.getElementById('pages');
+        pagesEl.innerText = `${currentPage} / ${pages}`;
+      }
+      
+      document.getElementById('prev').addEventListener('click', () => {
+        if (currentPage > 1) {
+          currentPage--;
           showBlocks(currentPage);
           updatePagination();
         }
-        
-        function goToPrevPage() {
-          if (currentPage > 1) {
-            currentPage--;
-            showBlocks(currentPage);
-            updatePagination();
-          }
-        }
-        
-        function goToNextPage() {
-          if (currentPage < pages) {
-            currentPage++;
-            showBlocks(currentPage);
-            updatePagination();
-          }
-        }
-        
-        function goToLastPage() {
-          currentPage = pages;
+      });
+      
+      document.getElementById('next').addEventListener('click', () => {
+        if (currentPage < pages) {
+          currentPage++;
           showBlocks(currentPage);
           updatePagination();
         }
-        
-        document.getElementById('first').addEventListener('click', goToFirstPage);
-        document.getElementById('prev').addEventListener('click', goToPrevPage);
-        document.getElementById('next').addEventListener('click', goToNextPage);
-        document.getElementById('last').addEventListener('click', goToLastPage);
-        
-        showBlocks(currentPage);
-        updatePagination();
-        
-        function shuffle(array) {
-          let currentIndex = array.length;
-          let temporaryValue, randomIndex;
-        
-          while (currentIndex !== 0) {
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex--;
-        
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
-        
-            if (array[currentIndex].children.length > 0) {
-              shuffle(Array.from(array[currentIndex].children));
-            }
-          }
-        
-          return array;
+      });
+      
+      showBlocks(currentPage);
+      updatePagination();
+      
+      function shuffle(array) {
+        let currentIndex = array.length;
+        let temporaryValue, randomIndex;
+      
+        while (currentIndex !== 0) {
+      
+          
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex--;
+      
+          
+          temporaryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temporaryValue;
         }
+      
+        return array;
+      }
     }
   });
