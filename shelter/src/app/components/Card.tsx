@@ -16,7 +16,7 @@ const Card: React.FC = () => {
             width={30}
             height={23}
             />
-            <h4 className="donation_cart">8380 2880 8028 8791 7435</h4>
+            <p className="donation_cart">8380 2880 8028 8791 7435</p>
         </div>
     );
 };

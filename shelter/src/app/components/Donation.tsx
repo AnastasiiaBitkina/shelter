@@ -24,8 +24,8 @@ const Donation: React.FC = () => {
                         alt='dog'
                     />
                     <div className='donation_right_block_items'>
-                        <h3 className="donation_heading">You can also<br />make a donation</h3>
-                        <h5 className="donation_subheading">Name of the bank / Type of bank account</h5>
+                        <p className="donation_heading">You can also<br />make a donation</p>
+                        <p className="donation_subheading">Name of the bank / Type of bank account</p>
                         <Card />
                         <LegalInfo />
                     </div>
