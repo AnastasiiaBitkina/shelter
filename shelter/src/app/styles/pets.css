@@ -1,0 +1,229 @@
+.pets{
+    height: 877px;
+    left: 0%;
+    right: 0%;
+    top: 1496px;
+    background: #F6F6F6;
+
+}
+.pets_heading{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    padding-top: 80px;
+    margin-bottom: 60px;
+}
+.pets_slider{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+/*left button*/
+
+.pets_slider_left_button_item{
+    position: relative;
+    margin-right: 105px;
+}
+.pets_slider_left_button{
+    position: absolute;
+    border: 2px solid #CDCDCD;
+    /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+    transition: all 0.3s ease-in-out;
+    border-radius: 100px;
+    transform: rotate(-180deg);
+    width: 52px;
+    height: 52px;
+    left: 0px;
+    top: 192px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 23px 19px;
+}
+.pets_slider_left_button:hover{
+  border: 2px solid #F1CDB3;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.left_arrow_pic{
+    width: 14px;
+    height: 6px;
+}
+
+/*cards*/
+.slider{
+    display: flex;
+    margin-right: 53px;
+    margin-left: -90px;
+}
+.pets_slider_items{
+    position: relative;
+    background: #FAFAFA;
+    border-radius: 9px;
+    margin-left: 90px;
+    transition: transform 0.3s ease-in-out;
+}
+.pets_slider_items:hover{
+  transform: scale(1.1);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.pets_slider_items:hover .pets_slider_button{
+  background: #FDDCC4;
+}
+:last-child .pets_slider_items{
+    margin-right: 0;
+}
+.pets_slider_pic{
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 37.93%;
+    border-radius: 9px 9px 0px 0px;
+    margin-bottom: 30px;
+}
+.pets_slider_name{
+    position: relative;
+    left: 98px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 30px;
+}
+.pets_slider_button{
+    position: relative;
+    left:41.5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 45px;
+    gap: 10px;
+    width: 187px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: #FAFAFA;;
+    flex: none;
+    flex-grow: 0;
+    margin-bottom: 30px;
+    /*height: fit-content;*/
+    /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+    text-decoration: none;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.open-popup:visited{
+    text-decoration: none;
+}
+.open-popup_2:visited{
+    text-decoration: none;
+}
+.open-popup_3:visited{
+    text-decoration: none;
+}
+/*none cards*/
+
+.sophia{
+  display: none;
+}
+.timmy{
+  display: none;
+}
+.charly{
+  display: none;
+}
+.scarlet{
+  display: none;
+}
+.freddie{
+  display: none;
+}
+
+
+/*right button*/
+
+.pets_slider_right_button_item{
+    position: relative;
+}
+.pets_slider_right_button{
+    position: absolute;
+    border: 2px solid #CDCDCD;
+    /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+    transition: all 0.3s ease-in-out;
+    border-radius: 100px;
+    transform: rotate(-180deg);
+    width: 52px;
+    height: 52px;
+    left: 100%;
+    top: 192px;
+}
+.pets_slider_right_button:hover{
+  border: 2px solid #F1CDB3;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.right_arrow_pic{
+    width: 14px;
+    height: 6px;
+}
+
+/*pets button*/
+
+.pets_button_item{
+    position: relative;
+}
+.pets_button{
+   /* position: absolute;
+    top: 0;
+    right: 470px;*/
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 45px;
+    gap: 10px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    border: none;
+    white-space: nowrap;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    flex: none;
+    order: 0;
+    align-self: center;
+    flex-grow: 0;
+    transition: all 0.3s ease-in-out;
+}
+.pets_button:hover{
+  background: #FDDCC4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.pets_mobile{
+  display: none;
+}
