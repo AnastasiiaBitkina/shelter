@@ -5,6 +5,7 @@ import About from '../components/About';
 import Pets from '../components/Pets';
 import Help from '../components/Help';
 import Donation from '../components/Donation';
+import Footer from '../components/Footer';
 import '../styles/globals.css'
 
 const HomePage: React.FC = () => {
@@ -18,6 +19,7 @@ const HomePage: React.FC = () => {
       <Pets />
       <Help />
       <Donation />
+      <Footer />
     </div>
   );
 };
