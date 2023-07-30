@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Intro from '../components/Intro';
+import About from '../components/About';
 import '../styles/globals.css'
 
 const HomePage: React.FC = () => {
@@ -10,6 +11,7 @@ const HomePage: React.FC = () => {
         <Header />
         <Intro />
       </div>
+      <About />
     </div>
   );
 };

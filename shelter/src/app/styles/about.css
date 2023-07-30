@@ -1,0 +1,73 @@
+.about_the_shelter {
+    width: 100%;
+    height: 588px;
+    background: #FFFFFF;
+}
+
+.about_the_shelter__pic {
+    padding-top: 80px;
+    padding-left: 175px;
+    margin-right: 120px;
+    /*position: absolute;*/
+}
+
+.about_the_shelter__item {
+    display: flex;
+}
+
+.about_the_shelter__text {
+    /*position: relative;*/
+    width: 430px;
+    height: 380px;
+    left: 0;
+    top: 14px;
+}
+
+.about_the_shelter__heading {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    width: 370px;
+    height: 90px;
+}
+
+.about_the_shelter__subheading {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #4C4C4C;
+    margin-bottom: 25px;
+    width: 430px;
+    height: 96px;
+}
+
+.about_the_shelter__subheading_2 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    color: #4C4C4C;
+    width: 430px;
+    height: 144px;
+}
+
+.about_the_shelter_tablet {
+    display: none;
+}
+
+.about_the_shelter_mobile {
+    display: none;
+}
