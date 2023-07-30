@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import '../styles/about.css';
 import '../styles/globals.css'
+import aboutPic from '../assets/images/about-pets.png'
 
 const About: React.FC = () => {
     return (
@@ -11,7 +12,7 @@ const About: React.FC = () => {
         <div className="wrapper">
             <div className="about_the_shelter__item">
                 <Image 
-                src="/shelter/assets/images/about-pets.png" 
+                src={ aboutPic } 
                 alt="dog" 
                 className="about_the_shelter__pic"
                 width={300}

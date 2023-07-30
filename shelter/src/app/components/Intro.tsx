@@ -2,10 +2,10 @@
 
 import React from 'react';
 import Image from 'next/image';
-import '../styles/globals.css'
-import '../styles/header.css'
-import '../styles/intro.css'
-
+import '../styles/globals.css';
+import '../styles/header.css';
+import '../styles/intro.css';
+import introPic from '../assets/images/start-screen-puppy.png';
 
 const Intro: React.FC = () => {
     return (
@@ -23,7 +23,7 @@ const Intro: React.FC = () => {
                                 <button className="intro_button_primery">Make a friend</button>
                             </div>
                         </div>
-                        <Image src="/src/app/assets/images/start-screen-puppy.png" alt="pappy" className="start_screen_puppy"  width= {698}  height={728} />
+                        <Image src={ introPic } alt="pappy" className="start_screen_puppy"  width= {698}  height={728} />
                     </div>
                 </div> 
             </section>
