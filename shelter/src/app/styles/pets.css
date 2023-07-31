@@ -131,6 +131,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    white-space: nowrap;
 }
 .open-popup:visited{
     text-decoration: none;

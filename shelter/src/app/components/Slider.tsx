@@ -36,7 +36,7 @@ const Slider: React.FC<SliderProps> = ({ pets }) => {
                     key={pet.name}
                     name={pet.name}
                     imageUrl= {pet.imageUrl}
-                    onLearnMore={pet.onLearnMore}
+                    onLearnMore={pet.onLearnMore}                    
                 />
             ))}
             <div className="pets_slider_right_button_item">
