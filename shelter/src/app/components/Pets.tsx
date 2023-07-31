@@ -1,10 +1,8 @@
-'use client'
-
 import React from 'react';
-import Image from 'next/image';
 import Slider from '../components/PetsSlider'
 import '../styles/globals.css';
 import '../styles/pets.css';
+
 
 
 const Pets: React.FC = () => {

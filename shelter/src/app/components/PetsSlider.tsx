@@ -1,41 +1,82 @@
-'use client'
-
 import React from 'react';
-import Image from 'next/image';
-import '../styles/globals.css'
-import '../styles/pets.css'
+import  Slider, { SliderProps } from './Slider';
+import { StaticImageData } from 'next/image';
 
-import leftArrow from '../assets/icons/Arrow_right.png';
-import rightArrow from '../assets/icons/Arrow.png';
 
-const Slider: React.FC = () => {
+import katrineImage from '../assets/images/pets-katrine.png';
+import jenniferImage from '../assets/images/pets-jennifer.png';
+import woodyImage from '../assets/images/pets-woody.png';
+import sophiaImage from '../assets/images/pets-sophia.png';
+import timmyImage from '../assets/images/pets-timmy.png';
+import scarletImage from '../assets/images/pets-scarlet.png';
+import freddyImage from '../assets/images/pets-freddie.png';
+import charlyImage from '../assets/images/pets-charly.png';
+
+
+
+
+/*type SliderProps = {
+    pets: {
+      name: string;
+      imageUrl: string;
+      onLearnMore: () => void;
+    }[];
+  };*/
+  
+
+  const PetsSlider: React.FC = () => {
+    const pets: {
+        name: string;
+        imageUrl: StaticImageData;
+        onLearnMore?: () => void; 
+    }[] =[
+      {
+        name: "Katrine",
+        imageUrl: katrineImage 
+      },
+      {
+        name: "Jennifer",
+        imageUrl: jenniferImage
+      },
+      {
+        name: "Woody",
+        imageUrl: woodyImage
+      },
+      {
+        name: "Sophia",
+        imageUrl: sophiaImage
+      },
+      {
+        name: "Timmy",
+        imageUrl: timmyImage
+      },
+      {
+        name: "Scarlet",
+        imageUrl: scarletImage
+      },
+      {
+        name: "Freddie",
+        imageUrl: freddyImage
+      },
+      {
+        name: "Charly",
+        imageUrl: charlyImage
+      }
+    ];
+  
+    const handleLearnMore = (petName: string) => {
+      console.log(`You clicked on ${petName}`);
+    };
+
+    const shuffledPets = pets.sort(() => 0.5 - Math.random()).slice(0, 3);
+
     return (
-        <div className="pets_slider" id="pagination">
-            <div className="pets_slider_left_button_item">
-                <button id="prev" className="pets_slider_left_button">
-                    <Image 
-                    className="left_arrow_pic" 
-                    src={ leftArrow } 
-                    alt="arrow" 
-                    width={14}
-                    height={6}
-                    />
-                </button>
-            </div>
-
-            <div className="pets_slider_right_button_item">
-                <button id="next" className="pets_slider_right_button">
-                    <Image 
-                    className="right_arrow_pic" 
-                    src={ rightArrow }
-                    alt="arrow"
-                    width={14}
-                    height={6} 
-                    />
-                </button>
-            </div>
-        </div>
+      <Slider pets={shuffledPets.map(pet => ({
+          name: pet.name,
+          imageUrl: pet.imageUrl,
+          onLearnMore: () => handleLearnMore(pet.name)
+      }))} />
     );
 };
 
-export default Slider;
+export default PetsSlider;
